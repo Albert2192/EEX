@@ -940,11 +940,11 @@
                     <a href="#" class="header-link dropdown-toggle" id="mainHeaderProfile" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                         <div class="d-flex align-items-center">
                             <div class="me-sm-2 me-0">
-                                <img src="./images/faces/9.jpg" alt="img" width="32" height="32" class="rounded-circle">
+                                <img src="<?php echo $user_img;?>" alt="img" width="32" height="32" class="rounded-circle">
                             </div>
                             <div class="d-sm-block d-none">
-                                <p class="fw-semibold mb-0 lh-1">Json Taylor</p>
-                                <span class="op-7 fw-normal d-block fs-11">Web Designer</span>
+                                <p class="fw-semibold mb-0 lh-1"><?php echo $user->user_name;?></p>
+                                <span class="op-7 fw-normal d-block fs-11"><?php echo $user->rol;?></span>
                             </div>
                         </div>
                     </a>
@@ -1930,7 +1930,7 @@
 
             <div class="d-md-flex d-block align-items-center justify-content-between my-4 page-header-breadcrumb">
                 <div>
-                    <p class="fw-semibold fs-18 mb-0">Welcome back, Json Taylor !</p>
+                    <p class="fw-semibold fs-18 mb-0">Bienvenido, <?php echo $user->user_name;?>!</p>
                     <span class="fs-semibold text-muted">Track your sales activity, leads and deals here.</span>
                 </div>
                 <div class="btn-list mt-md-0 mt-2">
@@ -2362,7 +2362,7 @@
                                                     <td>
                                                         <div class="d-flex align-items-center fw-semibold">
                                                             <span class="avatar avatar-sm me-2 avatar-rounded">
-                                                                <img src="./images/faces/9.jpg" alt="img">
+                                                                <img src="<?php echo $user_img;?>" alt="img">
                                                             </span>Jacob Smith
                                                         </div>
                                                     </td>

@@ -7,6 +7,8 @@ if (isset($_SESSION['session'])) {
     /* var_dump($user);
     exit; */
 }
+
+/* echo $page; */
 /* DATOS DE LA COMPAÑIA */
 $company = verificarEmpresa();
 include "head.php";

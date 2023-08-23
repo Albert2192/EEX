@@ -1,5 +1,6 @@
 /* var url = url_base+'auth'; */
-var url = url_base+'inc/auth.php';
+var url = url_base+'auth';
+/* var url = url_base+'inc/auth.php'; */
 $('#logout').click(function(e){
     e.preventDefault();
     $('#overlay').addClass('active');

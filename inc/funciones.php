@@ -9,7 +9,7 @@ require_once "mysql.php";
 function url() {
 	$host = $_SERVER['HTTP_HOST'];
 	/* return "https://$host/"; */
-	return "http://$host/EEA/";
+	return "http://$host/EEX/";
 }
 
 /* FUNCION QUE HACE MAYUSCULA O CAPITALIZE SEGUN EL TIPO */

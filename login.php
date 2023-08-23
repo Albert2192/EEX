@@ -36,5 +36,5 @@
             <p>Ingresando...</p>
         </div>
     </div>
-    <script src="<?php echo url();?>js/custom.js?v=<?php echo $v; ?>"></script>
-    <script src="<?php echo url();?>js/auth.js?v=<?php echo $v; ?>"></script>
+    <script src="<?php echo url();?>js/pages/custom.js?v=<?php echo $v; ?>"></script>
+    <script src="<?php echo url();?>js/pages/auth.js?v=<?php echo $v; ?>"></script>

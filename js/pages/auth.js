@@ -1,4 +1,5 @@
-const url = url_base+'inc/auth.php';
+/* const url = url_base+'inc/auth.php'; */
+var url = url_base+'auth';
 const $form = $('#formulario');
 $form.submit(function(e){
     e.preventDefault();
@@ -49,4 +50,15 @@ const reset = ()=>{
     $('#user').val('');
     $('#user').focus();
     $('#pass').val('');
+}
+
+/* VISUALIZA LAS CONTRASEÑAS */
+function passwordVisible(IDboton, IDcampoPassword) {
+    $(IDboton).click(function () {
+        if ($(IDcampoPassword).attr('type') == 'password') {
+            $(IDcampoPassword).attr('type', 'text');
+        } else {
+            $(IDcampoPassword).attr('type', 'password');
+        }
+    });
 }

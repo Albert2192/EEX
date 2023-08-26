@@ -104,22 +104,23 @@
             </div>
         </div>
     </div> -->
+
     <div class="col-xl-12">
         <div class="card custom-card">
             <div class="card-header justify-content-between">
                 <div class="card-title">
-                    Gutters
+                    Gestion de Usuarios
                 </div>
             </div>
             <div class="card-body">
-                <form class="row g-3 mt-0">
+                <form class="row g-3 mt-0" id="formulario">
                     <div class="col-md-4">
-                        <label class="form-label">First Name</label>
-                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        <label class="form-label">Nombre</label>
+                        <input type="text" class="form-control" placeholder="Ingrese su nombre" aria-label="First name" name="nombre" id="nombre">
                     </div>
                     <div class="col-md-4">
-                        <label class="form-label">Last Name</label>
-                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                        <label class="form-label">Usuario</label>
+                        <input type="text" class="form-control" placeholder="Ingrese su nick" aria-label="Last name">
                     </div>
                     <div class="col-md-4">
                         <label for="inputEmail4" class="form-label">Email</label>
@@ -128,6 +129,18 @@
                     <div class="col-md-6">
                         <label for="inputPassword4" class="form-label">Password</label>
                         <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1" class="form-label">Example select</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="col-6">
                         <label for="inputAddress" class="form-label">Address</label>
@@ -160,12 +173,30 @@
                             </label>
                         </div>
                     </div> -->
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <!-- <button class="btn btn-purple btn-wave waves-effect waves-light" type="button">Button</button> -->
+                        <button class="btn btn-success me-md-2 btn-wave waves-effect waves-light" type="submit" id="guardar">Guardar</button>
                     </div>
+                    <!-- <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div> -->
+
+                    <!-- ALERT -->
+                    <!-- <div class="alert alert-secondary alert-dismissible fade show custom-alert-icon shadow-sm myAlert" id="myAlert" role="alert">
+                        <svg class="svg-secondary" xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 24 24" width="1.5rem" fill="#000000">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                        </svg>
+                        Usuario guardado exitosamente!
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><i class="bi bi-x"></i></button>
+                    </div> -->
+                    <!-- ALERT -->
+
                 </form>
             </div>
-
         </div>
     </div>
+
 </div>
+
+<script src="<?php echo url(); ?>js/pages/users.js?v=<?php echo $v; ?>"></script>

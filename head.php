@@ -23,7 +23,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?php echo $title;?></title>
     <meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
-    <meta name="Author" content="Spruko Technologies Private Limited">
+    <meta name="Author" content="Alberto Aquino Céspedes">
     <meta name="keywords" content="admin,admin dashboard,admin panel,admin template,bootstrap,clean,dashboard,flat,jquery,modern,responsive,premium admin templates,responsive admin,ui,ui kit.">
 
     <!-- Jquery -->
@@ -69,4 +69,4 @@
     <!-- Fontawesome -->
     <link rel="stylesheet" href="<?php echo url();?>vendor/fontawesome-free/css/all.min.css">
     <!-- Estilos custom -->
-    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="<?php echo url();?>css/custom.css">

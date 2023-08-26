@@ -762,3 +762,42 @@
         display: block;
     }
 }
+
+/* LOGO EN LETRAS */
+.logo_leter{
+    /* background: red; */
+    width: 91px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eex_t{
+    margin: 0px;
+    font-weight: bold;
+    font-size: 23px;
+    color: #fff;
+    text-align: center;
+}
+.eex_s{
+    margin: 0px;
+    font-weight: bold;
+    font-size: 9px;
+    position: relative;
+    bottom: 6px;
+    color: #fff;
+}
+
+/* ALERTAS */
+.myAlert{
+    position: absolute;
+    /* top: 0px; */
+    left: 100vw;
+    /* transition: all .3s ease-in-out; */
+}
+
+.myAlert.active{
+    left: 70vw;
+}

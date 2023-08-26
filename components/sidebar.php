@@ -3,10 +3,16 @@
 
     <!-- Start::main-sidebar-header -->
     <div class="main-sidebar-header">
-        <a href="index.html" class="header-logo">
+        <a href="<?php echo url(); ?>" class="header-logo">
+
+            <div class="logo_leter desktop-dark">
+                <p class="eex_t">EEX</p>
+                <p class="eex_s">Sistema de Gestión</p>
+            </div>
+
             <img src="./images/brand-logos/desktop-logo.png" alt="logo" class="desktop-logo">
             <img src="./images/brand-logos/toggle-logo.png" alt="logo" class="toggle-logo">
-            <img src="./images/brand-logos/desktop-dark.png" alt="logo" class="desktop-dark">
+            <!-- <img src="./images/brand-logos/desktop-dark.png" alt="logo" class="desktop-dark"> -->
             <img src="./images/brand-logos/toggle-dark.png" alt="logo" class="toggle-dark">
             <img src="./images/brand-logos/desktop-white.png" alt="logo" class="desktop-white">
             <img src="./images/brand-logos/toggle-white.png" alt="logo" class="toggle-white">
@@ -25,12 +31,21 @@
                 </svg>
             </div>
             <ul class="main-menu">
+                <!-- Start::slide -->
+                <li class="slide">
+                    <a href="<?php echo url(); ?>" class="side-menu__item">
+                        <i class="bx bx-home side-menu__icon"></i>
+                        <span class="side-menu__label">Inicio</span>
+                    </a>
+                </li>
+                <!-- End::slide -->
+
                 <!-- Start::slide__category -->
                 <li class="slide__category"><span class="category-name">Principal</span></li>
                 <!-- End::slide__category -->
 
                 <!-- Start::slide -->
-                <li class="slide has-sub">
+                <!-- <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <i class="bx bx-home side-menu__icon"></i>
                         <span class="side-menu__label">Dashboards<span class="badge bg-warning-transparent ms-2">12</span></span>
@@ -77,15 +92,15 @@
                             <a href="index-11.html" class="side-menu__item">Personal</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 <!-- End::slide -->
 
                 <!-- Start::slide__category -->
-                <li class="slide__category"><span class="category-name">Pages</span></li>
+                <!-- <li class="slide__category"><span class="category-name">Pages</span></li> -->
                 <!-- End::slide__category -->
 
                 <!-- Start::slide -->
-                <li class="slide has-sub">
+                <!-- <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <i class="bx bx-file-blank side-menu__icon"></i>
                         <span class="side-menu__label">Pages<span class="badge bg-secondary-transparent ms-2">New</span></span>
@@ -231,7 +246,7 @@
                             <a href="to-do-list.html" class="side-menu__item">To Do List</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 <!-- End::slide -->
 
                 <!-- Start::slide -->
@@ -376,11 +391,11 @@
                 <!-- End::slide -->
 
                 <!-- Start::slide__category -->
-                <li class="slide__category"><span class="category-name">General</span></li>
+                <!-- <li class="slide__category"><span class="category-name">General</span></li> -->
                 <!-- End::slide__category -->
 
                 <!-- Start::slide -->
-                <li class="slide has-sub">
+                <!-- <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <i class="bx bx-box side-menu__icon"></i>
                         <span class="side-menu__label">Ui Elements</span>
@@ -445,11 +460,11 @@
                             <a href="typography.html" class="side-menu__item">Typography</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 <!-- End::slide -->
 
                 <!-- Start::slide -->
-                <li class="slide has-sub">
+                <!-- <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <i class="bx bx-medal side-menu__icon"></i>
                         <span class="side-menu__label">Utilities</span>
@@ -490,11 +505,11 @@
                             <a href="more.html" class="side-menu__item">Additional Content</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 <!-- End::slide -->
 
                 <!-- Start::slide -->
-                <li class="slide has-sub">
+                <!-- <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <i class="bx bx-file side-menu__icon"></i>
                         <span class="side-menu__label">Forms</span>
@@ -559,11 +574,11 @@
                             <a href="form_select2.html" class="side-menu__item">Select2</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 <!-- End::slide -->
 
                 <!-- Start::slide -->
-                <li class="slide has-sub">
+                <!-- <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <i class="bx bx-party side-menu__icon"></i>
                         <span class="side-menu__label">Advanced Ui</span>
@@ -604,24 +619,24 @@
                             <a href="swiperjs.html" class="side-menu__item">Swiper JS</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 <!-- End::slide -->
 
                 <!-- Start::slide -->
-                <li class="slide">
+                <!-- <li class="slide">
                     <a href="widgets.html" class="side-menu__item">
                         <i class="bx bx-gift side-menu__icon"></i>
                         <span class="side-menu__label">Widgets<span class="badge bg-danger-transparent ms-2">Hot</span></span>
                     </a>
-                </li>
+                </li> -->
                 <!-- End::slide -->
 
                 <!-- Start::slide__category -->
-                <li class="slide__category"><span class="category-name">Web Apps</span></li>
+                <!-- <li class="slide__category"><span class="category-name">Web Apps</span></li> -->
                 <!-- End::slide__category -->
 
                 <!-- Start::slide -->
-                <li class="slide has-sub">
+                <!-- <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <i class="bx bx-grid-alt side-menu__icon"></i>
                         <span class="side-menu__label">Apps<span class="badge bg-secondary-transparent ms-2">New</span></span>
@@ -743,11 +758,11 @@
                             </ul>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 <!-- End::slide -->
 
                 <!-- Start::slide -->
-                <li class="slide has-sub">
+                <!-- <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <i class="bx bx-layer side-menu__icon"></i>
                         <span class="side-menu__label">Nested Menu</span>
@@ -782,15 +797,15 @@
                             </ul>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 <!-- End::slide -->
 
                 <!-- Start::slide__category -->
-                <li class="slide__category"><span class="category-name">Tables & Charts</span></li>
+                <!-- <li class="slide__category"><span class="category-name">Tables & Charts</span></li> -->
                 <!-- End::slide__category -->
 
                 <!-- Start::slide -->
-                <li class="slide has-sub">
+                <!-- <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <i class="bx bx-table side-menu__icon"></i>
                         <span class="side-menu__label">Tables<span class="badge bg-success-transparent ms-2">3</span></span>
@@ -810,11 +825,11 @@
                             <a href="data-tables.html" class="side-menu__item">Data Tables</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 <!-- End::slide -->
 
                 <!-- Start::slide -->
-                <li class="slide has-sub">
+                <!-- <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <i class="bx bx-bar-chart-square side-menu__icon"></i>
                         <span class="side-menu__label">Charts</span>
@@ -889,15 +904,15 @@
                             <a href="echarts.html" class="side-menu__item">Echart Charts</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 <!-- End::slide -->
 
                 <!-- Start::slide__category -->
-                <li class="slide__category"><span class="category-name">Maps & Icons</span></li>
+                <li class="slide__category"><span class="category-name">Sistema</span></li>
                 <!-- End::slide__category -->
 
                 <!-- Start::slide -->
-                <li class="slide has-sub">
+                <!-- <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <i class="bx bx-map side-menu__icon"></i>
                         <span class="side-menu__label">Maps</span>
@@ -917,39 +932,36 @@
                             <a href="vector-maps.html" class="side-menu__item">Vector Maps</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 <!-- End::slide -->
                 <!-- Start::slide -->
                 <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
-                        <i class="bx bx-map side-menu__icon"></i>
+                        <i class="bx bx-cog  side-menu__icon"></i>
                         <span class="side-menu__label">Configuración</span>
                         <i class="fe fe-chevron-right side-menu__angle"></i>
                     </a>
                     <ul class="slide-menu child1">
-                        <li class="slide side-menu__label1">
-                            <a href="javascript:void(0)">Maps</a>
+                        <li class="slide">
+                            <a href="<?php echo url(); ?>users" class="side-menu__item">Usuarios</a>
                         </li>
                         <li class="slide">
-                            <a href="<?php echo url();?>users" class="side-menu__item">Usuarios</a>
+                            <a href="<?php echo url(); ?>permisos" class="side-menu__item">Permisos</a>
                         </li>
                         <li class="slide">
-                            <a href="leaflet-maps.html" class="side-menu__item">Leaflet Maps</a>
-                        </li>
-                        <li class="slide">
-                            <a href="vector-maps.html" class="side-menu__item">Vector Maps</a>
+                            <a href="<?php echo url(); ?>soporte" class="side-menu__item">Soporte</a>
                         </li>
                     </ul>
                 </li>
                 <!-- End::slide -->
 
                 <!-- Start::slide -->
-                <li class="slide">
+                <!-- <li class="slide">
                     <a href="icons.html" class="side-menu__item">
                         <i class="bx bx-store-alt side-menu__icon"></i>
                         <span class="side-menu__label">Icons</span>
                     </a>
-                </li>
+                </li> -->
                 <!-- End::slide -->
             </ul>
             <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">

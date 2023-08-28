@@ -942,14 +942,14 @@
                         <i class="fe fe-chevron-right side-menu__angle"></i>
                     </a>
                     <ul class="slide-menu child1">
-                        <li class="slide">
-                            <a href="<?php echo url(); ?>users" class="side-menu__item">Usuarios</a>
+                        <li class="slide <?php echo $page == "users" ? "active" : ""?>">
+                            <a href="<?php echo url(); ?>users" class="side-menu__item <?php echo $page == "users" ? "active" : ""?>">Usuarios</a>
                         </li>
-                        <li class="slide">
-                            <a href="<?php echo url(); ?>permisos" class="side-menu__item">Permisos</a>
+                        <li class="slide <?php echo $page == "permisos" ? "active" : ""?>">
+                            <a href="<?php echo url(); ?>permisos" class="side-menu__item <?php echo $page == "permisos" ? "active" : ""?>">Permisos</a>
                         </li>
-                        <li class="slide">
-                            <a href="<?php echo url(); ?>soporte" class="side-menu__item">Soporte</a>
+                        <li class="slide <?php echo $page == "soporte" ? "active" : ""?>">
+                            <a href="<?php echo url(); ?>soporte" class="side-menu__item <?php echo $page == "soporte" ? "active" : ""?>">Soporte</a>
                         </li>
                     </ul>
                 </li>

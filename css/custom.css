@@ -801,3 +801,11 @@
 .myAlert.active{
     left: 70vw;
 }
+
+.select2-selection{
+    height: 40px !important;
+}
+
+.select2-selection__rendered{
+    height: 40px !important;
+}

@@ -126,23 +126,19 @@
                         <label for="inputEmail4" class="form-label">Email</label>
                         <input type="email" class="form-control" id="inputEmail4">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label for="inputPassword4" class="form-label">Password</label>
                         <input type="password" class="form-control" id="inputPassword4">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="form-group">
-                            <label for="exampleFormControlSelect1" class="form-label">Example select</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                            <label for="rol" class="form-label">Rol</label>
+                            <select class="form-control" id="rol">
+                                <option>Todos</option>
                             </select>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-4">
                         <label for="inputAddress" class="form-label">Address</label>
                         <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
                     </div>

@@ -7,16 +7,20 @@ $localPathIndex = '/EEX';
 $localPath = '/EEX/';
 
 # VARIABLES GLOBALES (PRODUCCIÓN)
-//$localPathIndex = '/';
-//$localPath = '';
+//$localPathIndex = '';
+//$localPath = '/';
 
 # PAGINA DE INICIO
 get($localPathIndex, 'index.php');
 get($localPathIndex.'/$page', 'index.php');
-
+# PAGINA DE AUTENTICACIÓN
 any($localPathIndex.'/auth', 'inc/auth.php');
-
+# PAGINA DE FUNCIONES
 any($localPathIndex.'/funciones', 'inc/funciones.php');
+
+# PAGINA DE LISTADOS
+get($localPath.'/inc/listados', 'inc/listados.php');
+
 # SECCIONES GET
 /* get($localPath.'login', 'login.php');
 get($localPath.'registro', 'registro.php');

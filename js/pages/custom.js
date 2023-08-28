@@ -1,2 +1,2 @@
 /* ACCIONES SISTEMA */
-const url_base = '';
+/* const url_base = ''; */

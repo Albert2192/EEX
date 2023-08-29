@@ -127,28 +127,66 @@
                         <input type="email" class="form-control" id="inputEmail4">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputPassword4" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4">
+                        <div class="form-group">
+                            <label for="rol" class="form-label">Rol</label>
+                            <select class="form-control" id="rol"></select>
+                        </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="rol" class="form-label">Rol</label>
-                            <select class="form-control" id="rol">
-                                <option>Todos</option>
-                            </select>
+                            <label for="pais" class="form-label">Pais</label>
+                            <select class="form-control" id="pais"></select>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <label for="inputAddress" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="ciudad" class="form-label">Ciudad</label>
+                            <select class="form-control" id="ciudad"></select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputPassword" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword">
+                        <small id="emailHelp" class="form-text text-muted">Debe contener al menos 6 dígitos. Pueden ser numeros, letras y caracteres especiales.</small>
+                    </div>
+                    <!-- <div class="col-md-4">
+                        <label for="inputPassword1" class="form-label">Repita Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword1">
+                    </div> -->
+                    <!-- <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div> -->
+                    <div class="col-8">
+                        <label for="direccion" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="direccion" placeholder="Ingrese su dirección">
                     </div>
                     <!-- <div class="col-12">
                         <label for="inputAddress2" class="form-label">Address 2</label>
                         <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
                     </div> -->
-                    <div class="col-md-12">
-                        <label for="inputCity" class="form-label">City</label>
-                        <input type="text" class="form-control" id="inputCity">
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <!-- <h1>Seleccione una imágen</h1> -->
+                            <label for="direccion" class="form-label">Imágen de Pefil</label>
+                            <div class="img_container">
+                                <img class="img" id="img" src="images/systema/vendor/empty.png" alt="img" height="400">
+                                <div id="spinner" class="spinner"><i class="fa fa-spinner fa-spin fa-3x fa-fw"></i><span class="sr-only">Loading...</span></div>
+                            </div>
+                            <input type="text" class="form-control" id="name" placeholder="Seleccione una imágen" readonly>
+                            <!-- <input type="text" id="name" class="name" readonly> -->
+
+                            <label for="input" class="subir" id="subir">
+                                <i class='bx bx-image-alt icono'></i>
+                                <!-- <i class="fas fa-picture" aria-hidden="true"></i> -->
+                                <span>Selecionar Foto</span>
+                            </label>
+
+                            <input type="file" class="input" id="input" accept="image/*">
+                        </div>
+                        <div class="col-md-4"></div>
                     </div>
                     <!-- <div class="col-md-4">
                         <label for="inputState" class="form-label">State</label>

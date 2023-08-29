@@ -10,16 +10,17 @@ $localPath = '/EEX/';
 //$localPathIndex = '';
 //$localPath = '/';
 
+# PAGINA DE LISTADOS
+get($localPathIndex.'/listados', 'inc/listados.php');
 # PAGINA DE INICIO
 get($localPathIndex, 'index.php');
-get($localPathIndex.'/$page', 'index.php');
 # PAGINA DE AUTENTICACIÓN
 any($localPathIndex.'/auth', 'inc/auth.php');
 # PAGINA DE FUNCIONES
 any($localPathIndex.'/funciones', 'inc/funciones.php');
+# CONTROL DE LA PÁGINA ACTUAL (DEBE ESTAR AL FINAL)
+get($localPathIndex.'/$page', 'index.php');
 
-# PAGINA DE LISTADOS
-get($localPath.'/inc/listados', 'inc/listados.php');
 
 # SECCIONES GET
 /* get($localPath.'login', 'login.php');

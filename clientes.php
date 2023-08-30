@@ -71,11 +71,11 @@
                 <form class="row g-3 mt-0" id="formulario">
                     <div class="col-md-4">
                         <label class="form-label">C.I. o R.U.C.</label>
-                        <input type="text" class="form-control" placeholder="Ingrese su C.I. o RUC" aria-label="First name" name="ruc" id="ruc">
+                        <input type="text" class="form-control" id="ruc" name="ruc" placeholder="Ingrese su C.I. o RUC">
                     </div>
                     <div class="col-md-8">
                         <label class="form-label">Nombre o Razón Social</label>
-                        <input type="text" class="form-control" placeholder="Ingrese su Nombre" aria-label="Last name">
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su Nombre">
                     </div>
                     <div class="col-md-4">
                         <label for="email" class="form-label">Email</label>
@@ -102,7 +102,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger btn-wave waves-effect waves-light" data-bs-dismiss="modal">Cancelar</button>
-                <button class="btn btn-success me-md-2 btn-wave waves-effect waves-light" type="submit" id="guardar" form="#formulario">Guardar</button>
+                <button class="btn btn-success me-md-2 btn-wave waves-effect waves-light" type="submit" id="guardar" form="formulario">Guardar</button>
             </div>
         </div>
     </div>

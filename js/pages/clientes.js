@@ -1,5 +1,7 @@
-var url_tabla = url_base + "clientes-data";
+var url_get = url_base + "clientes-data";
+var url_post = url_base + "clientes-data-post";
 const $tabla = $('#tabla');
+var $form = $("#formulario");
 
 function formatterEstado(data) {
     switch (data) {
@@ -35,7 +37,7 @@ function iconosTabla(value, row, index) {
 }
 
 $tabla.bootstrapTable({
-    url: url_tabla + '?q=ver',
+    url: url_get + '?q=ver',
     toolbar: '#toolbar',
     showExport: false,
     search: false,
@@ -72,4 +74,50 @@ $tabla.bootstrapTable({
     /* $('#selected_pallet').val(row.pallet);
     $('#caja_orden').val(row.Ncaja);
     $('#tabla_cajas').bootstrapTable('refresh', { url: url + '?q=ver_cajas_server&pallet=' + row.pallet }); */
+});
+
+$form.submit(function (e) {
+    e.preventDefault();
+    /* console.log("enviando"); */
+    $.ajax({
+        dataType: 'json',
+        async: false,
+        type: 'POST',
+        url: url_post,
+        cache: false,
+        data: {
+            q: 'cargar',
+            ruc: $("#ruc").val(),
+            nombre: $("#nombre").val(),
+            email: $("#email").val(),
+            telefono: $("#telefono").val(),
+            celular: $("#celular").val(),
+            direccion: $("#direccion").val(),
+            obs: $("#obs").val(),
+        },
+        beforeSend: function () {
+            /* NProgress.start();
+            $('#cargando_contenido').addClass('active'); */
+        },
+        success: function (data, status, xhr) {
+
+            if(data.status == "success"){
+                $("#formulario")[0].reset();
+                $("#nuevo_cliente").modal('hide');
+                $tabla.bootstrapTable('refresh');
+            }
+            /* console.log(data.rows) */
+/*             setTimeout(function () {
+                alertDismissJS(data.mensaje, data.status);
+                $('#cargando_contenido').removeClass('active');
+            }, 2000) */
+        },
+        error: function (jqXhr) {
+            /* $('#cargando_contenido').removeClass('active');
+            alertDismissJS($(jqXhr.responseText).text().trim(), "error"); */
+        },
+        complete: function () {
+            /* $('#cargando_contenido').removeClass('active'); */
+        }
+    });
 });

@@ -63,6 +63,17 @@ if (isset($_SESSION['session'])) {
     <script src="<?php echo url(); ?>vendor/select2/js/select2.full.min.js"></script>
     <script src="<?php echo url(); ?>vendor/select2/js/select2-dropdownPosition.js"></script>
     <script src="<?php echo url(); ?>vendor/select2/js/i18n/es.js"></script>
+    <!-- BootstrapTable -->
+    <!-- <link rel="stylesheet" href="<?php echo url(); ?>vendor/bootstrap-table/bootstrap-table.css">
+    <script src="<?php echo url(); ?>vendor/bootstrap-table/bootstrap-table.js"></script>
+    <script src="<?php echo url(); ?>vendor/bootstrap-table/extensions/export/bootstrap-table-export.js"></script>
+    <script src="<?php echo url(); ?>vendor/bootstrap-table/extensions/export/tableExport.js"></script>
+    <script src="<?php echo url(); ?>vendor/bootstrap-table/locale/bootstrap-table-es-CL.min.js"></script>
+    <script src="<?php echo url(); ?>vendor/bootstrap-table/extensions/mobile/bootstrap-table-mobile.js"></script> -->
+    <link rel="stylesheet" href="<?php echo url(); ?>vendor/bootstrap-table_1.2/bootstrap-table.min.css">
+    <script src="<?php echo url(); ?>vendor/bootstrap-table_1.2/bootstrap-table.min.js"></script>
+    <!-- BootstrapTable CustomView -->
+    <script src="<?php echo url(); ?>vendor/bootstrap-table/extensions/custom-view/bootstrap-table-custom-view.js"></script>
     <script>
-        const url_base = "<?php echo url();?>";
+        const url_base = "<?php echo url(); ?>";
     </script>

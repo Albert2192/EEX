@@ -11,7 +11,7 @@ if (isset($_SESSION['session'])) {
 /* echo $page; */
 /* DATOS DE LA COMPAÑIA */
 $company = verificarEmpresa();
-include "head.php";
+include "components/head.php";
 ?>
 
 

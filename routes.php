@@ -12,6 +12,9 @@ $localPath = '/EEX/';
 
 # PAGINA DE LISTADOS
 get($localPathIndex.'/listados', 'inc/listados.php');
+# PAGINA DE MENUS
+get($localPathIndex.'/clientes-data', 'inc/clientes-data.php');
+
 # PAGINA DE INICIO
 get($localPathIndex, 'index.php');
 # PAGINA DE AUTENTICACIÓN

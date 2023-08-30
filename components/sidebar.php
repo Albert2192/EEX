@@ -42,6 +42,13 @@
 
                 <!-- Start::slide__category -->
                 <li class="slide__category"><span class="category-name">Principal</span></li>
+                <li class="slide">
+                    <a href="<?php echo url(); ?>clientes" class="side-menu__item">
+                        <!-- <i class="bx bx-home side-menu__icon"></i> -->
+                        <i class='bx bxs-user side-menu__icon'></i>
+                        <span class="side-menu__label">Clientes</span>
+                    </a>
+                </li>
                 <!-- End::slide__category -->
 
                 <!-- Start::slide -->

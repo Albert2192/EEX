@@ -30,7 +30,7 @@ if (isset($_SESSION['session'])) {
     <script src="<?php echo url(); ?>js/plugins/jquery/jquery-3.2.1.min.js"></script>
 
     <!-- Favicon -->
-    <link rel="icon" href="./images/icon/favicon.png" type="image/x-icon">
+    <link rel="icon" href="<?php echo url(); ?>images/icon/favicon.png" type="image/x-icon">
     <!-- <link rel="icon" href="./images/brand-logos/favicon.ico" type="image/x-icon"> -->
     <!-- Choices JS -->
     <script src="./libs/choices.js/public/assets/scripts/choices.min.js"></script>

@@ -5,7 +5,7 @@
                 <div class="card-title">
                     Clientes
                 </div>
-                <button type="button" class="btn btn-secondary btn-wave waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#nuevo_cliente">Nuevo Cliente</button>
+                <button type="button" class="btn btn-secondary btn-wave waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#nuevo_cliente" id="boton_cliente">Nuevo Cliente</button>
             </div>
             <div class="card-body">
                 <table id="tabla"></table>
@@ -56,7 +56,6 @@
             </div>
         </div>
     </div>
-
 </div>
 
 <!-- Modal -->
@@ -64,11 +63,12 @@
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Agregar Cliente</h5>
+                <h5 class="modal-title" id="titulo_Modal">Agregar Cliente</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form class="row g-3 mt-0" id="formulario">
+                <form class="row g-3 mt-0" id="formulario" action="cargar">
+                    <input type="hidden" id="id_cliente">
                     <div class="col-md-4">
                         <label class="form-label">C.I. o R.U.C.</label>
                         <input type="text" class="form-control" id="ruc" name="ruc" placeholder="Ingrese su C.I. o RUC">
@@ -101,9 +101,40 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-danger btn-wave waves-effect waves-light" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger btn-wave waves-effect waves-light" id="cancelar" data-bs-dismiss="modal">Cancelar</button>
                 <button class="btn btn-success me-md-2 btn-wave waves-effect waves-light" type="submit" id="guardar" form="formulario">Guardar</button>
+                <button class="btn btn-success me-md-2 btn-wave waves-effect waves-light d-none" type="submit" id="editar" form="formulario">Editar</button>
             </div>
+        </div>
+    </div>
+</div>
+
+<!-- <button id="probar">Probar</button> -->
+
+<!-- ALERTA SUCCESS -->
+<div class="toast-container position-fixed top-0 end-0 p-3">
+    <div id="alert_success" class="toast colored-toast bg-success text-fixed-white fade hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header bg-success text-fixed-white">
+            <img class="bd-placeholder-img rounded me-2" src="<?php echo url(); ?>images/icon/favicon.png" alt="logo">
+            <strong class="me-auto">Correcto</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body message_success">
+            Your,toast message here.
+        </div>
+    </div>
+</div>
+
+<!-- ALERTA DANGER -->
+<div class="toast-container position-fixed top-0 end-0 p-3">
+    <div id="alert_danger" class="toast colored-toast bg-danger text-fixed-white fade hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header bg-danger text-fixed-white">
+            <img class="bd-placeholder-img rounded me-2" src="<?php echo url(); ?>images/icon/favicon.png" alt="logo">
+            <strong class="me-auto">Error</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body message_danger">
+            Your,toast message here.
         </div>
     </div>
 </div>

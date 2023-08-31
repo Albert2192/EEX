@@ -70,7 +70,11 @@ function verificarUser($token){
                         LEFT JOIN `rol_user` r ON u.`rol_user_id` = r.`rol_user_id`
                         WHERE token = '$token';";
     $db->setQuery($query);
-    $row    = $db->loadObject();
+    $row = $db->loadObject();
+    if(empty($row)){
+        unset($_SESSION['session']);
+        session_destroy();
+    }
     return $row;
 }
 

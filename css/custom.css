@@ -873,3 +873,26 @@
 .icono{
     font-size: 20px;
 }
+
+.contenedor_option{
+    position: fixed;
+    inset: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    display: none;
+}
+
+.contenedor_option.active{
+    display: grid;
+    place-items: center;
+}
+
+.contenedor_mensaje{
+    background: #fff;
+    width: 340px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}

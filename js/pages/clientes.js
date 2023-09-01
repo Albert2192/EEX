@@ -24,7 +24,8 @@ window.accionesTabla = {
         editarCliente(row)
     },
     'click .eliminar': function (e, value, row, index) {
-        eliminarCliente(row.cliente_id)
+        /* eliminarCliente(row.cliente_id) */
+        alertaDesicion(row);
     },
     'click .cambiar_estado': function (e, value, row, index) {
         actualizarCliente(row.cliente_id, row.estado)
@@ -162,6 +163,12 @@ function editarCliente(row){
     $modal.modal('show');
 }
 
+function alertaDesicion(row){
+    $('#contenedor_option').addClass('active');
+    $('#cliente_eliminacion').text(row.nombre_r_social);
+    $('#aceptar_eliminacion').attr("data-id", row.cliente_id);
+}
+
 function eliminarCliente(id_cliente) {
     $.ajax({
         dataType: 'json',
@@ -175,8 +182,10 @@ function eliminarCliente(id_cliente) {
         success: function (data, status, xhr) {
             if (data.status == "success") {
                 $tabla.bootstrapTable('refresh');
+                $('#contenedor_option').removeClass('active');
                 mostrarAlerta(data.mensaje);
             } else {
+                $('#contenedor_option').removeClass('active');
                 mostrarError(data.mensaje);
             }
         },
@@ -226,4 +235,15 @@ $("#boton_cliente").click(function (e) {
     $('#editar').addClass('d-none');
     $('#guardar').removeClass('d-none');
     $('#formulario').attr('action', 'cargar');
+});
+
+$('#cancelar_eliminacion').click(function (e) { 
+    e.preventDefault();
+    $('#contenedor_option').removeClass('active');
+});
+
+$('#aceptar_eliminacion').click(function (e) { 
+    e.preventDefault();
+    let id = $(this).attr('data-id');
+    eliminarCliente(id);
 });

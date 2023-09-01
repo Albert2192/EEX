@@ -257,7 +257,7 @@
                 <!-- End::slide -->
 
                 <!-- Start::slide -->
-                <li class="slide has-sub">
+                <!-- <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <i class="bx bx-task side-menu__icon"></i>
                         <span class="side-menu__label">Task<span class="badge bg-secondary-transparent ms-2">New</span></span>
@@ -277,11 +277,11 @@
                             <a href="task-details.html" class="side-menu__item">Task Details</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 <!-- End::slide -->
 
                 <!-- Start::slide -->
-                <li class="slide has-sub">
+                <!-- <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <i class="bx bx-fingerprint side-menu__icon"></i>
                         <span class="side-menu__label">Authentication</span>
@@ -370,11 +370,11 @@
                             <a href="under-maintenance.html" class="side-menu__item">Under Maintenance</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 <!-- End::slide -->
 
                 <!-- Start::slide -->
-                <li class="slide has-sub">
+                <!-- <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <i class="bx bx-error side-menu__icon"></i>
                         <span class="side-menu__label">Error</span>
@@ -394,7 +394,7 @@
                             <a href="500-error.html" class="side-menu__item">500 - Error</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 <!-- End::slide -->
 
                 <!-- Start::slide__category -->

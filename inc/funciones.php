@@ -96,3 +96,6 @@ function verificarSession($token){
         session_destroy();
     }
 }
+
+
+/* $session = verificarUser($_SESSION['session']); */

@@ -3,56 +3,54 @@
         <div class="card custom-card">
             <div class="card-header justify-content-between">
                 <div class="card-title">
-                    Clientes
+                    Mi Perfil
                 </div>
                 <button type="button" class="btn btn-secondary btn-wave waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#nuevo_cliente" id="boton_cliente">Nuevo Cliente</button>
             </div>
             <div class="card-body">
-                <table id="tabla"></table>
-                <!-- <form class="row g-3 mt-0" id="formulario">
+                <!-- <table id="tabla"></table> -->
+                <form class="row g-3 mt-0" id="formulario">
                     <div class="col-md-4">
                         <label class="form-label">Nombre</label>
-                        <input type="text" class="form-control" placeholder="Ingrese su nombre" aria-label="First name" name="nombre" id="nombre">
+                        <input type="text" class="form-control" value="<?php echo $user->user_name; ?>" readonly>
                     </div>
                     <div class="col-md-4">
                         <label class="form-label">Usuario</label>
-                        <input type="text" class="form-control" placeholder="Ingrese su nick" aria-label="Last name">
+                        <input type="text" class="form-control" value="<?php echo $user->nick; ?>" readonly>
                     </div>
                     <div class="col-md-4">
                         <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4">
+                        <input type="email" class="form-control" value="<?php echo $user->email; ?>" readonly>
                     </div>
                     <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="rol" class="form-label">Rol</label>
-                            <select class="form-control" id="rol"></select>
-                        </div>
+                        <label for="rol" class="form-label">Rol</label>
+                        <input type="text" class="form-control" value="<?php echo $user->rol; ?>" readonly>
                     </div>
                     <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="pais" class="form-label">Pais</label>
-                            <select class="form-control" id="pais"></select>
-                        </div>
+                        <label for="pais" class="form-label">Pais</label>
+                        <input type="text" class="form-control" value="<?php echo $user->pais; ?>" readonly>
                     </div>
                     <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="ciudad" class="form-label">Ciudad</label>
-                            <select class="form-control" id="ciudad"></select>
-                        </div>
+                        <label for="ciudad" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" value="<?php echo $user->ciudad; ?>" readonly>
+                    </div>
+                    <div class="col-12">
+                        <p class="h6 mb-3">Cambio de contraseña.</p>
                     </div>
                     <div class="col-md-4">
                         <label for="inputPassword" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="inputPassword">
+                        <input type="password" class="form-control" id="Password">
                         <small id="emailHelp" class="form-text text-muted">Debe contener al menos 6 dígitos. Pueden ser numeros, letras y caracteres especiales.</small>
                     </div>
-                    <div class="col-8">
-                        <label for="direccion" class="form-label">Dirección</label>
-                        <input type="text" class="form-control" id="direccion" placeholder="Ingrese su dirección">
+                    <div class="col-md-4">
+                        <label for="inputPassword" class="form-label">Repite Contraseña</label>
+                        <input type="password" class="form-control" id="rePassword">
+                        <small id="emailHelp" class="form-text text-muted">Repita su contaseña tal cual la escribio.</small>
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <button class="btn btn-success me-md-2 btn-wave waves-effect waves-light" type="submit" id="guardar">Guardar</button>
                     </div>
-                </form> -->
+                </form>
             </div>
         </div>
     </div>
@@ -67,7 +65,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form class="row g-3 mt-0" id="formulario" action="cargar">
+                <form class="row g-3 mt-0" action="cargar">
                     <input type="hidden" id="id_cliente">
                     <div class="col-md-4">
                         <label class="form-label">C.I. o R.U.C.</label>
@@ -140,27 +138,6 @@
 </div>
 
 <div id="contenedor_option" class="contenedor_option">
-    <!-- <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-        <div class="card bg-white border-0">
-            <div class="alert custom-alert1 alert-warning">
-                <button type="button" class="btn-close ms-auto" data-bs-dismiss="alert" aria-label="Close"><i class="bi bi-x"></i></button>
-                <div class="text-center px-5 pb-0">
-                    <svg class="custom-alert-icon svg-warning" xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 24 24" width="1.5rem" fill="#000000">
-                        <path d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"></path>
-                    </svg>
-                    <h5>Warning</h5>
-                    <p class="">This alert is created to just show the warning message.</p>
-                    <div class="">
-                        <button class="btn btn-sm btn-outline-secondary m-1">Back</button>
-                        <button class="btn btn-sm btn-warning m-1">Continue</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
     <div id="contenedor_mensaje" class="contenedor_mensaje">
         <div class="text-center px-5 pb-0">
             <svg class="custom-alert-icon svg-warning" xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 24 24" width="1.5rem" fill="#000000">
@@ -175,9 +152,6 @@
             </div>
         </div>
     </div>
-
-
-
 </div>
 
-<script src="<?php echo url(); ?>js/pages/clientes.js?v=<?php echo $v; ?>"></script>
+<script src="<?php echo url(); ?>js/pages/perfil.js?v=<?php echo $v; ?>"></script>

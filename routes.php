@@ -15,6 +15,7 @@ get($localPathIndex.'/listados', 'inc/listados.php');
 # PAGINA DE MENUS
 get($localPathIndex.'/clientes-data', 'inc/clientes-data.php');
 post($localPathIndex.'/clientes-data-post', 'inc/clientes-data.php');
+post($localPathIndex.'/perfil-data-post', 'inc/perfil-data.php');
 
 # PAGINA DE INICIO
 get($localPathIndex, 'index.php');

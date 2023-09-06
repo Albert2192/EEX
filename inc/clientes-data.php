@@ -12,7 +12,7 @@ switch ($q) {
         //Parametros de ordenamiento, busqueda y paginacion
         $search     = $db->clearText($_REQUEST['search']);
         $limit      = $db->clearText($_REQUEST['limit']);
-        $offset        = $db->clearText($_REQUEST['offset']);
+        $offset     = $db->clearText($_REQUEST['offset']);
         $order      = $db->clearText($_REQUEST['order']);
         $sort       = ($db->clearText($_REQUEST['sort'])) ?: 2;
         if (isset($search) && !empty($search)) {
